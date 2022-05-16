@@ -66,7 +66,7 @@ public class Tp01AlancayfrancoApplication {
 
 		//prueba punto8
 		secuencia2 ssecuencia2 = new secuencia2();
-		ssecuencia2.setNum(4);
+		ssecuencia2.setNum(6);
 		System.out.println(ssecuencia2.secu());
 
 		//prueba punto9
@@ -86,7 +86,7 @@ public class Tp01AlancayfrancoApplication {
 
 		//prueba punto12
 		tiempo ttiempo = new tiempo();
-		ttiempo.setNum(6);
+		ttiempo.setNum(4);
 		System.out.println(ttiempo.formula());
 	}
 }

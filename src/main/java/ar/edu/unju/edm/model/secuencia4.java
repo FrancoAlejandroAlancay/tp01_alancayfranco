@@ -13,7 +13,7 @@ public class secuencia4 {
         String resultado =" ";
         while(num>=160){
             aux=String.valueOf(num);
-            resultado=resultado + "" + aux;
+            resultado=resultado + " " + aux;
             num=num-20;
         }
         return resultado;

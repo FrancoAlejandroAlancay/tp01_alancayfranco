@@ -11,10 +11,10 @@ import ar.edu.unju.edm.model.Mes1;
 import ar.edu.unju.edm.model.Par_Impar;
 
 @SpringBootApplication
-public class Tp01_alancayfranco {
+public class Tp01AlancayfrancoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Tp01_alancayfranco.class, args);
+		SpringApplication.run(Tp01AlancayfrancoApplication.class, args);
 		//prueba punto1
 		Principal factoPrincipal = new Principal();
 		factoPrincipal.setNum(4);
@@ -52,6 +52,8 @@ public class Tp01_alancayfranco {
 			System.out.println(nnota.nota());
 			aux--;
 		}
+			
 	}
+
 
 }

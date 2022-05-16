@@ -10,7 +10,12 @@ import ar.edu.unju.edm.model.Principal;
 import ar.edu.unju.edm.model.Mes;
 import ar.edu.unju.edm.model.Mes1;
 import ar.edu.unju.edm.model.Par_Impar;
-
+import ar.edu.unju.edm.model.secuencia1;
+import ar.edu.unju.edm.model.secuencia2;
+import ar.edu.unju.edm.model.secuencia3;
+import ar.edu.unju.edm.model.secuencia4;
+import ar.edu.unju.edm.model.secuencia5;
+import ar.edu.unju.edm.model.tiempo;
 
 
 @Controller
@@ -100,4 +105,69 @@ public class MenuController {
           }
       return "punto6";
     }
+    //punto7
+  @GetMapping("/secuencia")
+  public String getsecuPage(@RequestParam (name = "num") int num,Model model){
+    String Aux;
+    secuencia1 secu = new secuencia1();
+    secu.setNum(num);
+    Aux = secu.secu();
+    model.addAttribute("secu", Aux);
+    return "punto7";
+  }
+
+  //punto8
+  @GetMapping("/secuencia2")
+  public String getsecu2Page(@RequestParam (name = "num") int num,Model model){
+    String Aux;
+    secuencia2 secu2 = new secuencia2();
+    secu2.setNum(num);
+    Aux = secu2.secu();
+    model.addAttribute("secu2", Aux);
+    return "punto8";
+  }
+
+  //punto9
+  @GetMapping("/secuencia3")
+  public String getsecu3Page(@RequestParam (name = "num") int num,Model model){
+    String Aux;
+    secuencia3 secu3 = new secuencia3();
+    secu3.setNum(num);
+    Aux = secu3.secu();
+    model.addAttribute("secu3", Aux);
+    return "punto9";
+  }
+
+  //punto10
+  @GetMapping("/secuencia4")
+  public String getsecu4Page(@RequestParam (name = "num") int num,Model model){
+    String Aux;
+    secuencia4 secu4 = new secuencia4();
+    secu4.setNum(num);
+    Aux = secu4.secu();
+    model.addAttribute("secu4", Aux);
+    return "punto10";
+  }
+
+  //punto11
+  @GetMapping("/secuencia5")
+  public String getsecu5Page(@RequestParam (name = "num") int num, Model model){
+    String Aux;
+    secuencia5 secu5 = new secuencia5();
+    secu5.setNum(num);
+    Aux = secu5.secu();
+    model.addAttribute("secu5", Aux);
+    return "punto11";
+  }
+
+  //punto12
+  @GetMapping("/tiempo")
+  public String gettiempoPage(@RequestParam (name = "num") int num,Model model){
+    String aux;
+    tiempo tiem = new tiempo();
+    tiem.setNum(num);
+    aux = tiem.formula();
+    model.addAttribute("tempo", aux);
+    return "punto12";
+  }
 }
